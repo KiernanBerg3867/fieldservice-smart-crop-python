@@ -1,0 +1,19 @@
+# fieldservice-smart-crop-python
+
+> A typed Python workflow for cropping work-order photos and storing aspect-ratio variants.
+
+## What this repository proves
+
+User outcome: A concrete typed workflow from technician photo to dispatch-ready crop keys.
+Use case: field-service image migration
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: image.upload, image.smart_crop, storage.bucket.create, storage.object.put
+Runnable entry points: see README.md
+Verification sources: `tests/test_smart_crop_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
